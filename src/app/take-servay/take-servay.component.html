@@ -1,0 +1,9 @@
+<p *ngIf = showDetail>
+  My Name is {{name}}
+</p>
+<br>
+Name : <input [(ngModel)] = 'name' />
+<br/>
+You Entered : {{name}}
+<br/>
+<button (click)='toggle()'>{{!showDetail?'Show':'Hide'}} Details</button>
